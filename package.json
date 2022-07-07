@@ -1,7 +1,15 @@
 {
   "name": "react-code-tag",
   "version": "0.1.0",
+  "description": "Code tag to show code in browser as in code editor.",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SVladikO/react-code-tag"
+  },
+  "author": "svladiko",
+  "keywords": ["code", "html code tag"],
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -9,6 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
