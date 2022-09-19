@@ -13,7 +13,7 @@ const getStyle = (
     padding: '1px 0',
   },
   rowContent: {
-    padding: "0 30px 0 18px",
+    padding: "0 30px 0 26px",
   },
   rowNumber: {
     color: rowNumberColor,
