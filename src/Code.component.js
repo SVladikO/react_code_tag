@@ -8,11 +8,12 @@ const getStyle = (
   wrapper: {
     borderLeft: `solid 2px ${borderColor}`,
     background: backgroundColor,
-    overflowX: 'auto',
+    position: 'relative',
     color: codeColor,
+    padding: '1px 0',
   },
   rowContent: {
-    padding: "0 20px 0 18px",
+    padding: "0 30px 0 18px",
   },
   rowNumber: {
     color: rowNumberColor,
@@ -30,8 +31,17 @@ const getStyle = (
   pre: {
     padding: '4px 0',
     margin: '3px 0',
+    overflowX: 'auto',
+  },
+  copyButton: {
+    position: 'absolute',
+    top: '2px',
+    right: '2px',
+    fontSize: '8px',
+    opacity: 0.6
   }
-});
+ }
+);
 
 function CodeComponent(props) {
   const rows = String.raw`${props.code}`.split(/\n/);
@@ -50,6 +60,13 @@ function CodeComponent(props) {
       backgroundColor,
   );
 
+  const [copyCodeTitle, setCopyCodeTitle] = React.useState('Copy')
+  const copyCode = () => {
+    navigator.clipboard.writeText(props.code)
+    setCopyCodeTitle('Copied!')
+    setTimeout(() => setCopyCodeTitle('Copy'), 1500)
+  }
+
   const processedRows = rows.map(
       (rowCode, index) =>
           React.createElement(
@@ -58,13 +75,14 @@ function CodeComponent(props) {
             React.createElement("span", {style: style.rowNumber}, index + 1),
             React.createElement("span", {style: style.rowContent}, rowCode),
           )
-
-      );
-  return React.createElement(
-      "div",
-      {style: style.wrapper},
-      React.createElement("pre", {style: style.pre}, processedRows)
   );
+
+  return React.createElement("div", {style: style.wrapper},
+             React.createElement("button", {style: style.copyButton, onClick: copyCode}, copyCodeTitle),
+             React.createElement("pre", {style: style.pre},
+                 processedRows,
+             )
+         );
 }
 
 export default CodeComponent;

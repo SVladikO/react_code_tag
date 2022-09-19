@@ -4,18 +4,16 @@ import ReactDOM from 'react-dom/client';
 import Code from './Code.component';
 
 const yourCode = function() {
-    console.log("hell                               o");
-    console.log("hello");
     console.log("hello");
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const style = {
-    codeColor: 'yellow',
-    borderColor: 'yellow',
-    backgroundColor: 'green',
-    rowNumberColor: 'red',
+    // codeColor: '#11fffb',
+    // borderColor: '#ff0303',
+    // backgroundColor: '#4f67d1',
+    // rowNumberColor: '#000',
 }
 root.render(
   <React.StrictMode>
