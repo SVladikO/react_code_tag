@@ -3,15 +3,24 @@ import ReactDOM from 'react-dom/client';
 
 import Code from './Code.component';
 
-const code = `// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals`;
+const yourCode = function() {
+    console.log("hell                               o");
+    console.log("hello");
+    console.log("hello");
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const style = {
+    codeColor: 'yellow',
+    borderColor: 'yellow',
+    backgroundColor: 'green',
+    rowNumberColor: 'red',
+}
 root.render(
   <React.StrictMode>
-    <div style={{width: '600px'}}>
-      <Code code={code}/>
+    <div style={{width: '300px'}}>
+      <Code code={yourCode} style={style}/>
     </div>
   </React.StrictMode>
 );
