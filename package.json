@@ -1,6 +1,6 @@
 {
   "name": "react-code-tag",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Code tag to show code in browser as in code editor.",
   "private": true,
   "repository": {
