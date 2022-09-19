@@ -51,7 +51,7 @@ function CodeComponent(props) {
     borderColor = '#339f33',
     rowNumberColor = '#cfcfcf',
     backgroundColor = '#f7f7f7'
-  } = props.style;
+  } = props.style || {};
 
   const style = getStyle(
       codeColor,
