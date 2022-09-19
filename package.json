@@ -2,7 +2,6 @@
   "name": "react-code-tag",
   "version": "0.2.0",
   "description": "Code tag to show code in browser as in code editor.",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/SVladikO/react-code-tag"
@@ -24,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start ./src/index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
