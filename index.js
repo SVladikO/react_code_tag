@@ -1,3 +1,3 @@
-import CodeComponent from "./src/Code.component.js";
+import CodeComponent from './src/Code.component.js'
 
-export default CodeComponent;
+export default CodeComponent

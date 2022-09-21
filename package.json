@@ -9,8 +9,18 @@
   "author": "svladiko",
   "keywords": [
     "code",
-    "html code tag"
+    "react_code_tag",
+    "html_code_tag",
+    "code_tag",
+    "code samples"
   ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "format": "standard",
+    "eject": "react-scripts eject"
+  },
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
@@ -20,20 +30,15 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "jsdoc": "^3.6.11",
+    "standard": "^17.0.0"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
-  },
-  "devDependencies": {
-    "standard": "^17.0.0"
   },
   "browserslist": {
     "production": [
