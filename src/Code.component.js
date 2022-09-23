@@ -1,4 +1,7 @@
 import React from 'react'
+import PropTypes from "prop-types"
+
+
 const getStyle = (
   codeColor,
   borderColor,
@@ -42,6 +45,28 @@ const getStyle = (
   }
 })
 
+/**
+ * React component
+ * @component
+ *
+ *
+ * @param props {object} {code, style}
+ * @returns {React.DetailedReactHTMLElement<{HTMLElement>}
+ * @constructor
+ * @author Vlad Serhiichuk @mail.com
+ * @example
+ * const style = {
+ *   codeColor: '#11fffb',
+ *   borderColor: '#ff0303',
+ *   backgroundColor: '#4f67d1',
+ *   rowNumberColor: '#000'
+ * }
+ *
+ * function hi() {
+ *     console.log('hi')
+ * }
+ * <CodeComponent code={hi} style={style} />
+ */
 function CodeComponent (props) {
   const rows = String.raw`${props.code}`.split(/\n/)
 
@@ -82,6 +107,26 @@ function CodeComponent (props) {
       processedRows
     )
   )
+}
+
+CodeComponent.propTypes = {
+  /**
+   * Code which we will show
+   */
+  code: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.bigint,
+    PropTypes.bool,
+    PropTypes.func,
+    PropTypes.number,
+    PropTypes.object,
+    PropTypes.string,
+    PropTypes.symbol
+  ]).isRequired,
+  /**
+   * Custom style
+   */
+  style: PropTypes.object
 }
 
 export default CodeComponent

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import Code from 'react_code_tag'
+import Code from './Code.component'
 
 const yourCode = function () {
   console.log('hello')
@@ -19,7 +19,7 @@ const style = {
 root.render(
   <React.StrictMode>
     <div style={{ width: '300px' }}>
-      <Code code={yourCode} style={style} />
+      <Code code={yourCode} style={style}/>
     </div>
   </React.StrictMode>
 )
