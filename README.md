@@ -1,3 +1,9 @@
+## What is ReactCodeTag ?
+ReactCodeTag is a react component which will show your
+code example in more readable way. With rows number, saved structure, 
+possibility to copy, styled as you wish.
+
+
 ## 1. Install:
 
 `$ npm i react-code-tag` 
@@ -5,15 +11,15 @@
 `$ yarn add react-code-tag`
 
 ## 2. Usage 
-```xml
-import CodeTag from "react-code-tag"
 
-...
+```xml
+import CodeTag from "react_code_tag"
 
 const yourCode = function () {
     console.log('hello')
 }
 
+...
 render () {
    return <CodeTag code={yourCode} />
 }
@@ -22,6 +28,7 @@ render () {
 
 ## 3. You can customize colors too:
 ```xml
+
 const style = {
   codeColor: '#11fffb',
   borderColor: '#ff0303',
@@ -29,6 +36,7 @@ const style = {
   rowNumberColor: '#000',
 }
 
+...
 render () {
    return <CodeTag code={/* your code */} style={style}/>
 }
