@@ -9,10 +9,16 @@
 import CodeTag from "react-code-tag"
 
 ...
+
+const yourCode = function () {
+    console.log('hello')
+}
+
 render () {
-   return <CodeTag code={/* your code */} />
+   return <CodeTag code={yourCode} />
 }
 ```
+![example](https://github.com/SVladikO/react_code_tag/blob/master/src/react_code_tag_example.png?raw=true)
 
 ## 3. You can customize colors too:
 ```xml
@@ -27,6 +33,8 @@ render () {
    return <CodeTag code={/* your code */} style={style}/>
 }
 ```
+![example](https://github.com/SVladikO/react_code_tag/blob/master/src/react_code_tag_example_custom.png?raw=true)
+
 
 ## 4. Contribute:
 4.1 ```git clone https://github.com/SVladikO/react-code-tag.git```
