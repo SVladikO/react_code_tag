@@ -6,9 +6,9 @@ possibility to copy, styled as you wish.
 
 ## 1. Install:
 
-`$ npm i react-code-tag` 
+`$ npm i react_code_tag` 
 ###### or
-`$ yarn add react-code-tag`
+`$ yarn add react_code_tag`
 
 ## 2. Usage 
 
@@ -45,12 +45,14 @@ render () {
 
 
 ## 4. Contribute:
-4.1 ```git clone https://github.com/SVladikO/react-code-tag.git```
+4.1 ```git clone https://github.com/SVladikO/react_code_tag.git```
 ####
-4.2 ```cd react-code-tag```
+4.2 ```cd react_code_tag```
 ####
 4.3 ```npm install```
 ####
 4.4 ```npm run start```
 
 
+
+?
